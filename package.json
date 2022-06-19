@@ -1,0 +1,44 @@
+{
+  "name": "node-mongo",
+  "version": "1.0.0",
+  "description": "Boilerplate for nodejs with mongo db",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "reshelper",
+    "rest",
+    "api",
+    "node",
+    "nodejs",
+    "mongo",
+    "express"
+  ],
+  "author": "Hemin Tailor <flyingtailorbird@gmail.com> (https://github.com/hemintailor)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hemintailor/node-mongo"
+  },
+  "homepage": "https://github.com/hemintailor/node-mongo#readme",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.0",
+    "multer": "^1.4.4",
+    "reshelper": "^1.0.3",
+    "socket.io": "^4.4.0",
+    "validator": "^13.7.0",
+    "validatore": "^1.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

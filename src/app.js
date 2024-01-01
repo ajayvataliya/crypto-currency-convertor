@@ -2,16 +2,12 @@ require('dotenv').config({path: `./.env`})
 const express = require("express")
 const bodyParser = require('body-parser')
 const route = require("./route")
-const {server, socket} = require('./config');
+const {server} = require('./config');
 const cors=require("cors");
 const app = express();
 
 const http = require('http').createServer(app);
-const httpServer = require("http").createServer();
-
 const reshelper = require('reshelper')
-
-require("./db/connection")
 
 app.use(reshelper);
 
@@ -33,9 +29,6 @@ app.use((req, res, next) => {
     next();
 });
 
-global.io = require('socket.io')(httpServer);
-
-require('./socket').init();
 
 app.use(express.json());
 
@@ -49,6 +42,3 @@ http.listen(server.port, () => {
     console.log(`server run at ${server.port}`)
 })
 
-httpServer.listen(socket.port, () => {
-    console.info(`Socket server started on ${socket.port}`);
-});

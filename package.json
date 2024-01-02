@@ -16,7 +16,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "http": "^0.0.1-security",
-    "joi": "^17.11.0",
+    "joi": "10.4.1",
     "reshelper": "^1.0.3",
     "validator": "^13.7.0",
     "validatore": "^1.0.1"

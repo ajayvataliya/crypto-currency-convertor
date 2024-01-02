@@ -38,7 +38,7 @@ app.use(bodyParser.json({limit: '50mb', extended: true}));
 app.use("/", route)
 
 
-http.listen(server.port, () => {
+http.listen(server.port, '0.0.0.0', () => {
     console.log(`server run at ${server.port}`)
 })
 
